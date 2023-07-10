@@ -1,0 +1,98 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Outfit&family=Roboto&family=Sacramento&display=swap');
+
+/* 
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sacramento', cursive;
+*/
+
+@font-face {
+    font-family: TTHoves;
+    src: url(../fonts/TTHoves-Medium/TTHoves-Medium.woff);
+}
+
+
+/* header */
+.header {
+    position: fixed;
+    top: 3px;
+    border-top: 2px solid #92191C;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 3px 14px #0000000F;
+}
+
+.header .header-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0 16px;
+}
+
+.header .logo {
+    display: inline-block;
+}
+
+.header .logo-a {
+    display: inline-block;
+}
+
+.header .logo-img {
+    width: 190px;
+}
+
+.header .navbar .nav-link {
+    font-size: 18px;
+    font-family: 'TTHoves', sans-serif;
+    color: black;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+
+.header .navbar .nav-link:hover {
+    padding-bottom: 0;
+    color: #92191C;
+    transform: translateY(4px);
+}
+
+.header .navbar .nav-link::before {
+    content:url("../images/chart-simple-solid.svg");
+    position: absolute;
+    width: 10px;
+    top: 0px;
+    left: 50%;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+
+.header .nav-link:hover::before {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+
+.navbar .nav-item .dropdown-menu {
+    border-radius: 0;
+    border-top: 2px solid #92191C;
+    top: 67px;
+}
+
+/* Banner */
+.banner {
+    padding: 244.55px 0 337px;
+    background-image: url('../images/banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Media Queries with Min-Width */
+@media screen and (min-width: 1500px) {
+    /* Global Styling */
+    .container {
+        min-width: 1436px;
+    }
+}
