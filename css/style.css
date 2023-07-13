@@ -14,6 +14,15 @@
     src: url(../fonts/TTHoves-Medium/TTHoves-Medium.woff);
 }
 
+@font-face {
+    font-family: BebasNeueBook;
+    src: url(../fonts/BebasNeue/Commercial/OTF/BebasNeue-Book.otf);
+}
+
+@font-face {
+    font-family: FinalSixBook;
+    src: url(../fonts/Final.Six/Final.Six/FinalSix\ ExtraBold.ttf);
+}
 
 /* header */
 .header {
@@ -23,6 +32,7 @@
     background-color: white;
     width: 100%;
     box-shadow: 0px 3px 14px #0000000F;
+    z-index: 1;
 }
 
 .header .header-content {
@@ -45,6 +55,13 @@
     width: 190px;
 }
 
+.header .right-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
 .header .navbar .nav-link {
     font-size: 18px;
     font-family: 'TTHoves', sans-serif;
@@ -59,26 +76,119 @@
     transform: translateY(4px);
 }
 
+.header .nav-item:last-child .nav-link:hover {
+    transform: translateY(0);
+}
+
 .header .navbar .nav-link::before {
-    content:url("../images/chart-simple-solid.svg");
+    content: "\e473";
+    font: var(--fa-font-solid);
     position: absolute;
-    width: 10px;
-    top: 0px;
+    color: #92191C;
+    font-size: 18px;
+    top: -10px;
     left: 50%;
+    transform: translateX(-50%);
     transition: all 0.3s ease-out;
     opacity: 0;
 }
 
 .header .nav-link:hover::before {
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translate(-50%,-10px);
+}
+
+.header .nav-item:last-child .nav-link::before {
+    display: none;
 }
 
 
-.navbar .nav-item .dropdown-menu {
+.header .nav-item .dropdown-menu {
     border-radius: 0;
     border-top: 2px solid #92191C;
-    top: 67px;
+    top: 56px;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    min-width: 254px;
+}
+
+.header .nav-item .show {
+    opacity: 1;
+}
+
+.header .nav-item .dropdown-li {
+    padding: 0 20px;
+    background-color: white;
+    transition: all 0.2s ease-out;
+}
+
+.header .nav-item .dropdown-li:hover {
+    background-color:#F8F8F8; 
+}
+
+.header .dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+}
+
+.header .nav-item .dropdown-item  {
+    border-bottom: 1px dashed #BFBCBC;
+    padding: 18px 0 9px;
+}
+
+.header .nav-item .dropdown-li:last-child .dropdown-item {
+    border-bottom: none;
+}
+
+.header .login-btn {
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: #92191C;
+    border-radius: 30px;
+    border: 0;
+    transition: all 0.3s ease-out;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.header .login-btn:hover {
+    background-color: white;
+    border-color: #92191C;
+}
+
+.header .login-btn .icon {
+    width: 39.4px;
+    height: 39.4px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #92191C;
+    background-color: white;
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+}
+
+.header .login-btn:hover .icon {
+    transform: translateX(60px);
+    background-color: #92191C;
+    color: white;
+}
+
+.header .login-btn .txt {
+    color: white;
+    font-family: 'TTHoves', sans-serif;
+    font-size: 18px;
+    transform: translateX(0);
+    transition: all 0.3s ease-out;
+}
+
+.header .login-btn:hover .txt {
+    transform: translateX(-60px);
+    color: #92191C;
 }
 
 /* Banner */
@@ -87,6 +197,358 @@
     background-image: url('../images/banner-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner .content {
+    position: relative;
+}
+
+.banner .fda-div {
+    position: absolute;
+    width: 214px;
+    top: -120px;
+    right: -150px;
+}
+
+.banner .banner-img-div {
+    margin-bottom: 39px;
+}
+
+.banner .banner-img {
+    width: 456px;
+}
+
+.banner .heading-1 {
+    font-family: 'BebasNeueBook', sans-serif;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    font-size: 76px;
+    line-height: 120px;
+}
+
+.banner .heading-2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 130px;
+    letter-spacing: 0;
+    line-height: 120px;
+    margin-bottom: 13px;
+}
+
+.banner .banner-last-txt {
+    font-family: 'FinalSixBook', sans-serif;
+    font-size: 30px;
+    color: #00A88E;
+}
+
+.banner .coming-div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 250px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: rgba(255, 255, 255, 0.94);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.banner .comming-player {
+    width: 138px;
+    height: 138px;
+    padding-right: 16px;
+}
+
+/* Nature Section */
+.nature {
+    background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+    padding: 196px 0 175px;
+}
+
+/* Media Queries with Max-Width */
+@media screen and (max-width: 1750px) {
+    /* Banner */
+    .banner .fda-div {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    /* Banner */
+    .banner {
+        padding-bottom: 300px;
+    }
+    .banner .banner-img-div {
+        margin-bottom: 26px;
+    }
+
+    .banner .banner-img {
+        width: 300px;
+    }
+
+    .banner .heading-1 {
+        font-size: 70px;
+        line-height: 100px;
+    }
+
+    .banner .heading-2 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .banner .banner-last-txt {
+        font-size: 28px;
+    }
+
+    .banner .coming-div {
+        width: 280px;
+        height: 242px;
+    }
+
+    .banner .comming-player {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* Header */
+    .header .logo-img {
+        width: 160px;
+    }
+
+    .header .login-btn {
+        padding: 10px 21px;
+    }
+
+    /* Banner */
+    .banner {
+        padding-bottom: 220px;
+    }
+    .banner .banner-img {
+        width: 250px;
+    }
+
+    .banner .heading-1 {
+        font-size: 60px;
+    }
+
+    .banner .heading-1 {
+        font-size: 90px;
+    }
+
+    .banner .coming-div {
+        width: 240px;
+        height: 216px;
+    }
+
+    .banner .comming-player {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 991.9px) {
+    /* Header */
+    .header .right-part {
+        flex-direction: row-reverse;
+    }
+
+    .header .login-btn {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .header .login-btn:hover .icon {
+        transform: translate(0);
+        color: white;
+        background-color: #92191C;
+    }
+
+    .header .login-btn .txt {
+        display: none;
+    }
+
+    /* NavBar Setting */
+    .header {
+        position: relative;
+    }
+
+    .header .navbar {
+        position: unset;
+    }
+
+    .header .navbar .navbar-toggler {
+        padding: 0;
+        border: 0;
+    }
+
+    .header .navbar .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .header .navbar-collapse {
+        position: absolute;
+        top: 101%;
+        left: 0;
+        width: 100%;
+    }
+    
+    .header .nav-item {
+        background-color: white;
+        padding-left: 20px;
+    }
+
+    .header .navbar .nav-link:hover {
+        transform: translateY(0);
+    }
+
+    .header .navbar .nav-link::before {
+        display: none;
+    }
+
+    /* Banner */
+    .banner {
+        padding-top: 150px;
+        padding-bottom: 216px;
+    }
+
+    .banner .fda-div {
+        width: 190px;
+    }
+
+    .banner .coming-div {
+        width: 220px;
+        height: 208px;
+    }
+
+    .banner .comming-player {
+        width: 106px;
+        height: 106px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Banner */
+    .banner {
+        padding-top: 130px;
+        padding-bottom: 170px;
+    }
+    .banner .fda-div {
+        width: 140px;
+        top: -80px;
+    }
+
+    .banner .banner-img {
+        width: 200px;
+    }
+
+    .banner .heading-1 {
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    .banner .heading-2 {
+        font-size: 74px;
+        line-height: 76px;
+        margin-bottom: 0;
+    }
+
+    .banner .banner-last-txt {
+        font-size: 20px;
+    }
+
+    .banner .coming-div {
+        width: 180px;
+        height: 160px;
+    }
+
+    .banner .comming-player {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Banner */
+    .banner {
+        padding-top: 94px;
+        padding-bottom: 146px;
+    }
+
+    .banner .fda-div {
+        width: 120px;
+    }
+
+    .banner .banner-img {
+        width: 174px;
+    }
+
+    .banner .heading-1 {
+        font-size: 46px;
+        line-height: 48px;
+    }
+
+    .banner .heading-2 {
+        font-size: 58px;
+        line-height: 60px;
+    }
+
+    .banner .coming-div {
+        height: 130px;
+        width: 156px;
+    }
+
+    .banner .comming-player {
+        width: 74px;
+        height: 74px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    /* Header */
+    .header .logo-img {
+        width: 120px;
+    }
+
+    .header .right-part {
+        gap: 0px;
+    }
+
+    .header .login-btn .icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Banner */
+    .banner {
+        padding-bottom: 120px;
+    }
+
+    .banner .heading-1 {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .banner .heading-2 {
+        font-size: 43px;
+        line-height: 45px;
+    }
+
+    .banner .banner-last-txt {
+        font-size: 14px;
+    }
+
+    .banner .coming-div {
+        height: 110px;
+        width: 130px;
+    }
+
+    .banner .comming-player {
+        padding-right: 6px;
+    }
 }
 
 /* Media Queries with Min-Width */
@@ -94,5 +556,12 @@
     /* Global Styling */
     .container {
         min-width: 1436px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Header */
+    .header .nav-item .nav-link {
+        padding: 0 20px;
     }
 }
