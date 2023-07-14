@@ -24,6 +24,16 @@
     src: url(../fonts/Final.Six/Final.Six/FinalSix\ ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: FinalSixLight;
+    src: url(../fonts/Final.Six/Final.Six/FinalSix\ Light.ttf);
+}
+
+@font-face {
+    font-family: FianlSixMedium;
+    src: url(../fonts//Final.Six/Final.Six/FinalSix\ Medium.ttf);
+}
+
 /* header */
 .header {
     position: fixed;
@@ -262,15 +272,311 @@
 
 /* Nature Section */
 .nature {
-    background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
-    padding: 196px 0 175px;
+    background: url('../images/nature-bg.png') right top / auto 100% no-repeat,transparent linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+}
+
+.nature .content {
+    position: relative;
+    padding: 175px 0 190px;
+}
+
+.nature .plots-main {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.nature .plots-div {
+    width: 78%;
+    padding: 20px 150px;
+    position: relative;
+    border-radius: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url('../images/banner-bg.png');
+    z-index: 2;
+}
+
+.nature .plots-div::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: ' ';
+    background-color: rgba(0, 0, 0, 0.538);
+    border-radius: 75px;
+    z-index: -1;
+}
+
+.nature .plots-info {
+    display: flex;
+    gap: 20px;
+}
+
+.nature .headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nature .sm-heading {
+    font-size: 22px;
+    color: white;
+    display: block;
+}
+
+.nature .lg-heading {
+    font-size: 40px;
+    color: white;
+    line-height: 40px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 12px;
+}
+
+.nature .types {
+    display:  flex;
+    gap: 16px;
+}
+
+.nature .type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nature .size {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    display: block;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.nature .size-type {
+    color: white;
+}
+
+.nature .heading-1 {
+    color: white;
+    font-family: 'BebasNeueBook', sans-serif;
+    font-size: 60px;
+    line-height: 64px;
+    margin-bottom: 0;
+}
+
+.nature .heading-2 {
+    font-family: 'Bebas Neue';
+    font-size: 76px;
+    line-height: 80px;
+    color: #00A88E;
+}
+
+.nature .para {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    width: 55%;
+    font-family: 'FinalSixLight', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nature .sm-para {
+    font-family: 'Dancing Script', cursive;
+    color: #00A88E;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+/* Facilities */
+.facilities {
+    padding-bottom: 116px;
+    position: relative;
+}
+
+.facilities .content {
+    display: flex;
+    justify-content: end;
+    padding-top: 83px;
+}
+
+.green-card {
+    width: 30.5%;
+    position: absolute;
+    background-color: #00A88E;
+    left: 0;
+    top: 0;
+}
+
+.green-card .top-part {
+    padding: 244px 65px 69px;
+}
+
+.green-card .heading-1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    line-height: 74px;
+    color: white;
+}
+
+.green-card .heading-2 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 146px;
+    line-height: 136px;
+}
+
+.green-card .bottom-part {
+    padding: 88px 65px 93px;
+    background-color: rgba(0, 154, 130, 1);
+}
+
+.green-card .para {
+    font-size: 22px;
+    line-height: 34px;
+    color: white;
+    font-family: 'FinalSixLight', sans-serif;
+}
+
+
+.facilities .sm-cards {
+    width: 71%;
+}
+
+.facilities .sm-card {
+    padding-bottom: 31px;
+}
+
+.facilities .fl-card .card-img-div {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+
+.facilities .sl-card .card-img-div, .facilities .tl-card .card-img-div {
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow: hidden;
+}
+
+
+.facilities .card-link {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-family: 'FianlSixMedium', sans-serif;
+    position: relative;
+    transform: translateY(0);
+    display: block;
+    transition: all 0.3s ease-out;
+    padding-top: 9px;
+}
+
+.facilities .sm-card:hover .card-link {
+    color: #00A88E;
+    transform: translateY(4px);
+}
+
+.facilities .fl-card .card-link::after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: ' ';
+    background-color: #00A88E;
+    top: calc(100% + 8px);
+    left: 0;
+    transition: all 0.3s linear;
+}
+
+.facilities .fl-card:hover .card-link::after {
+    width: 100%;
+}
+
+.facilities .sl-card .card-link::after {
+    position: absolute;
+    right: 0;
+    color: #00A88E;
+    content: "\e473";
+    font: var(--fa-font-solid);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.facilities .sl-card:hover .card-link::after {
+    opacity: 1;
+}
+
+.facilities .tl-card:hover .card-link{
+    color: black;
+    transform: translateY(0);
 }
 
 /* Media Queries with Max-Width */
+@media screen and (max-width: 1853px) {
+    /* Facilities */
+    .green-card .heading-1 {
+        font-size: 60px;
+        line-height: 64px;
+    }
+
+    .green-card .heading-2 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .green-card .para {
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 1750px) {
     /* Banner */
     .banner .fda-div {
         right: 0;
+    }
+
+    /* Nature */
+    .nature .content {
+        padding: 120px 0;
+    }
+
+    .nature .para {
+        width: 51%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* Facilities */
+    .green-card {
+        width: 28%;
+    }
+
+    .green-card .top-part {
+        padding: 244px 50px 69px;
+    }
+
+    .green-card .heading-1 {
+        font-size: 46px;
+        line-height: 50px;
+    }
+
+    .green-card .heading-2 {
+        font-size: 92px;
+        line-height: 92px;
+    }
+
+    .green-card .bottom-part {
+        padding: 88px 50px 93px;
+    }
+
+    .green-card .para {
+        font-size: 18px;
+        line-height: 26px;
     }
 }
 
@@ -310,6 +616,78 @@
         width: 130px;
         height: 130px;
     }
+
+    /* Nature */
+    .nature {
+        background: url('../images/nature-bg.png') 176% top / auto 100% no-repeat,transparent linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .nature .plots-div {
+        padding: 18px 60px;
+        width: 60%;
+    }
+
+    .nature .plots-info {
+        gap: 10px;
+    }
+
+    .nature .sm-heading {
+        font-size: 16px;
+    }
+
+    .nature .lg-heading {
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 8px;
+    }
+
+    .nature .types {
+        gap: 10px;
+    }
+
+    .nature .size {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .nature .content {
+        padding: 100px 0;
+    }
+
+    .nature .para {
+        width: 48%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Facilities */
+    .green-card {
+        position: static;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .green-card .top-part {
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .green-card .bottom-part {
+        padding: 60px 50px 60px;
+    }
+
+    .facilities {
+        padding-bottom: 60px;
+    }
+
+    .facilities .content {
+        padding-top: 0;
+        flex-direction: column;
+    }
+
+    .facilities .sm-cards {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -346,6 +724,42 @@
     .banner .comming-player {
         width: 120px;
         height: 120px;
+    }
+
+    /* Nature */
+    .nature {
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .nature .plots-div {
+        padding: 16px 60px;
+        width: 40%;
+    }
+
+    .nature .plots-info:first-child {
+        margin-bottom: 16px;
+    }
+
+    .nature .plots-info {
+        gap: 0px;
+    }
+
+    .nature .lg-heading {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .nature .types {
+        gap: 7px;
+    }
+
+    .nature .para {
+        width: 80%;
+    }
+
+    /* Facilities */
+    .facilities {
+        padding-bottom: 24px;
     }
 }
 
@@ -428,6 +842,28 @@
         width: 106px;
         height: 106px;
     }
+
+    /* Nature */
+    .nature {
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .nature .plots-div {
+        width: 60%;
+    }
+
+    .nature .para {
+        width: 100%;
+    }
+
+    /* Facilities */
+    .facilities .sm-card {
+        padding-bottom: 22px;
+    }
+
+    .facilities .card-link {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -469,6 +905,61 @@
         width: 90px;
         height: 90px;
     }
+
+    /* Nature */
+    .nature .content {
+        padding: 90px 0;
+    }
+
+    .nature .plots-main {
+        justify-content: start;
+    }
+
+    .nature .plots-div {
+        padding: 16px 40px;
+        width: 70%;
+    }
+
+    .nature .heading-1 {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Nature */
+    .nature .content {
+        padding: 90px 0;
+    }
+    .nature .heading-1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .nature .heading-2 {
+        font-size: 70px;
+        line-height: 73px;
+    }
+
+    .nature .plots-info {
+        margin-bottom: 6px;
+    }
+
+    .nature .sm-heading {
+        font-size: 14px;
+    }
+
+    .nature .lg-heading {
+        font-size: 28px;
+        letter-spacing: 7px;
+    }
+
+    .nature .types {
+        gap: 6px;
+    }
+
+    .nature .size-type {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -505,10 +996,67 @@
         width: 74px;
         height: 74px;
     }
+
+    /* Nature */
+    .nature .plots-div {
+        width: 66%;
+        border-radius: 35px;
+        padding: 16px 20px;
+    }
+
+    .nature .plots-div::before {
+        border-radius: 35px;
+    }
+
+    .nature .lg-heading {
+        font-size: 24px;
+        letter-spacing: 6px;
+    }
+
+    .nature .sm-heading {
+        font-size: 12px;
+    }
+
+    .nature .size {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+
+    .nature .size-type {
+        font-size: 12px;
+    }
+
+    .nature .heading-1 {
+        font-size: 46px;
+        line-height: 54px;
+    }
+
+    .nature .heading-2 {
+        font-size: 54px;
+        line-height: 58px;
+    }
+
+    .nature .content {
+        padding: 100px 0;
+    }
+
+    .nature .para {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .nature .sm-para {
+        font-size: 27px;
+    }
 }
 
 @media screen and (max-width: 380px) {
     /* Header */
+    .header .header-content {
+        padding: 8px 0;
+    }
+
     .header .logo-img {
         width: 120px;
     }
@@ -548,6 +1096,88 @@
 
     .banner .comming-player {
         padding-right: 6px;
+    }
+
+    /* Nature */
+    .nature .content {
+        font-size: 60px;
+    }
+
+    .nature .plots-div {
+        width: 74%;
+    }
+
+    .nature .type {
+        justify-content: start;
+    }
+
+    .nature .lg-heading {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    .nature .sm-heading {
+        font-size: 10px;
+    }
+
+    .nature .size-type {
+        font-size: 9px;
+    }
+
+    .nature .heading-1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .nature .heading-2 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .nature .para {
+        line-height: 22px;
+    }
+
+    .nature .sm-para {
+        font-size: 22px;
+    }
+
+    /* Facilities */
+    .green-card {
+        margin-bottom: 20px;
+    }
+
+    .green-card .top-part {
+        padding: 40px 0;
+    }
+
+    .green-card .heading-1 {
+        font-size: 36px;
+        line-height: 38px;
+        margin-bottom: 0;
+    }
+
+    .green-card .heading-2 {
+        font-size: 74px;
+        line-height: 74px;
+    }
+
+    .green-card .bottom-part {
+        padding: 40px 20px;
+    }
+
+    .green-card .para {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .facilities .sm-card {
+        padding-bottom: 14px;
+    }
+
+    .facilities .card-link {
+        font-size: 18px;
+        padding-top: 4px;
     }
 }
 
