@@ -25,6 +25,11 @@
 }
 
 @font-face {
+    font-family: FinalSixBlack;
+    src: url(../fonts/Final.Six/Final.Six/FinalSix\ Black.ttf);
+}
+
+@font-face {
     font-family: FinalSixLight;
     src: url(../fonts/Final.Six/Final.Six/FinalSix\ Light.ttf);
 }
@@ -417,6 +422,7 @@
 
 .green-card .top-part {
     padding: 244px 65px 69px;
+    text-align: center;
 }
 
 .green-card .heading-1 {
@@ -443,6 +449,7 @@
     line-height: 34px;
     color: white;
     font-family: 'FinalSixLight', sans-serif;
+    text-align: center;
 }
 
 
@@ -517,6 +524,113 @@
     transform: translateY(0);
 }
 
+/* Join Us */
+.join-us {
+    background: url('../images/join-us-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.join-us .logo-div {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 325px;
+}
+
+.join-us .content {
+    height: 810px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.join-us .text-part {
+    padding-bottom: 69px;
+    text-align: center;
+}
+
+.join-us .heading {
+    font-size: 79px;
+    font-family: 'FinalSixBlack', sans-serif;
+    color: white;
+    line-height: 44px;
+    margin-bottom: 0;
+}
+
+.join-us .and {
+    font-family: 'Sacramento', cursive;
+    color: #FFC100;
+}
+
+.join-us .para {
+    font-family: 'FinalSixLight', sans-serif;
+    font-size: 25px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 0;
+}
+
+/* Chiniot */
+.chiniot {
+    padding-bottom: 251px;
+    position: relative;
+}
+
+.chiniot .green-card {
+    right: 0;
+    left: unset;
+    top: -184px;
+}
+
+.chiniot .green-card .top-part {
+    padding: 116px 120px 78px;
+}
+
+.chiniot .green-card .bottom-part {
+    padding: 108px 60px 90px;
+}
+
+.chiniot .content {
+    padding-top: 57px;
+}
+
+.chiniot .main-content {
+    width: 69%;
+}
+
+.chiniot .a-cards {
+    margin-bottom: 67px;
+}
+
+.chiniot .animation-parent {
+    width: 114px;
+    height: 114px;
+}
+
+.chiniot .animation {
+    width: 100%;
+}
+
+.chiniot .animation-txt {
+    font-family: 'FianlSixMedium', sans-serif;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.chiniot .map {
+    width: 100%;
+    height: 346px;
+    border-radius: 12px;
+}
+
+.chiniot .video {
+    width: 100%;
+    height: 346px;
+    border-radius: 12px;
+}
+
 /* Media Queries with Max-Width */
 @media screen and (max-width: 1853px) {
     /* Facilities */
@@ -533,7 +647,13 @@
     .green-card .para {
         font-size: 20px;
     }
+
+    /* Chiniot Green Card */
+    .chiniot .green-card .bottom-part {
+        padding: 116px 60px 100px;
+    }
 }
+
 @media screen and (max-width: 1750px) {
     /* Banner */
     .banner .fda-div {
@@ -577,6 +697,27 @@
     .green-card .para {
         font-size: 18px;
         line-height: 26px;
+    }
+
+    /* Chiniot Green Card */
+    .chiniot .green-card .top-part {
+        padding: 170px 0px 110px;
+    }
+}
+
+@media screen and (max-width: 1576px) {
+    .chiniot .green-card .bottom-part {
+        padding: 116px 58px 100px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .chiniot .green-card .bottom-part {
+        padding: 116px 44px 100px;
+    }
+
+    .chiniot .green-card .para {
+        margin-bottom: 0;
     }
 }
 
@@ -687,6 +828,43 @@
 
     .facilities .sm-cards {
         width: 100%;
+    }
+
+    /* Join Us Section */
+    .join-us .content {
+        height: 700px;
+    }
+    .join-us .logo-div {
+        width: 275px;
+    }
+
+    .join-us .heading {
+        font-size: 70px;
+    }
+
+    .join-us .para {
+        font-size: 23px;
+    }
+
+    /* Chiniot */
+    .chiniot {
+        padding-bottom: 80px;
+    }
+
+    .chiniot .content {
+        padding-top: 0;
+    }
+
+    .chiniot .main-content {
+        width: 100%;
+    }
+
+    .chiniot .green-card .top-part {
+        padding: 50px 0;
+    }
+
+    .chiniot .green-card .bottom-part {
+        padding: 60px 50px 60px;
     }
 }
 
@@ -864,6 +1042,23 @@
     .facilities .card-link {
         font-size: 20px;
     }
+
+    /* Chiniot */
+    .chiniot {
+        padding-bottom: 50px;
+    }
+
+    .chiniot .animation-txt {
+        font-size: 18px;
+    }
+
+    .chiniot .map {
+        height: 300px;
+    }
+
+    .chiniot .video{
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -922,6 +1117,28 @@
 
     .nature .heading-1 {
         font-size: 54px;
+    }
+
+    /* Join Us */
+    .join-us .heading {
+        font-size: 66px;
+    }
+
+    .join-us .para {
+        font-size: 19px;
+    }
+
+    /* Chiniot */
+    .chiniot .map-parent {
+        margin-bottom: 22px;
+    }
+
+    .chiniot .map {
+        height: 250px;
+    }
+
+    .chiniot .video {
+        height: 250px;
     }
 }
 
@@ -1048,6 +1265,51 @@
 
     .nature .sm-para {
         font-size: 27px;
+    }
+
+    /* Join Us */
+    .join-us .content {
+        height: 640px;
+    }
+
+    .join-us .logo-div {
+        width: 240px;
+    }
+
+    /* Chiniot */
+    .chiniot {
+        padding-bottom: 20px;
+    }
+    
+    .chiniot .green-card .top-part {
+        padding: 40px 0;
+    }
+
+    .green-card .heading-1 {
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .green-card .heading-2 {
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    .chiniot .green-card .bottom-part {
+        padding: 40px 30px;
+    }
+
+    .chiniot .animation-txt {
+        line-height: 26px;
+        font-size: 14px;
+    }
+
+    .chiniot .map {
+        height: 200px;
+    }
+
+    .chiniot .video {
+        height: 200px;
     }
 }
 
@@ -1178,6 +1440,22 @@
     .facilities .card-link {
         font-size: 18px;
         padding-top: 4px;
+    }
+
+    /* Join Us */
+    .join-us .content {
+        height: 600px;
+    }
+    .join-us .logo-div {
+        width: 230px;
+    }
+
+    .join-us .heading {
+        font-size: 50px;
+    }
+
+    .join-us .para {
+        font-size: 18px;
     }
 }
 
