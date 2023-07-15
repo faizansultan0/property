@@ -320,7 +320,8 @@
 
 .nature .plots-info {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nature .headings {
@@ -631,6 +632,202 @@
     border-radius: 12px;
 }
 
+/* Footer */
+.footer {
+    background: linear-gradient(180deg, #000000 0%, #000000C1 100%) 0% 0% no-repeat, url('../images/footer-bg.png') center / cover no-repeat;
+}
+
+.footer .content {
+    position: relative;
+    padding-top: 774px;
+    padding-bottom: 38px;
+}
+
+.footer .form-section {
+    padding: 98px 115px 141px;
+    background-color: #00A88E;
+    border-radius: 12px;
+    width: 100%;
+    top: -100px;
+    left: 0;
+    position: absolute;
+}
+
+.footer .heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+.footer .input-element {
+    width: 100%;
+    padding: 22px;
+    background-color: #005C4D;
+    color: white;
+    font-family: 'FinalSixLight', sans-serif;
+    border: 0;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.footer .input-element::placeholder {
+    color: white;
+}
+
+#textarea {
+    resize: none;
+}
+
+.footer .button-div {
+    display: flex;
+    justify-content: end;
+}
+
+.footer .button {
+    color: #00A88E;
+    background-color: white;
+    padding: 14px 36px;
+    border: 0;
+    border-radius: 70px;
+    border: 1px solid white;
+    transition: all 0.3s ease-out;
+    font-size: 18px;
+    font-family: 'FinalSixMedium', sans-serif;
+}
+
+.footer .button:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.footer .f-logo {
+    display: inline-block;
+    margin-bottom: 54px;
+}
+
+.footer .f-logo-a {
+    display: inline-block;
+}
+
+.footer .para {
+    font-size: 18px;
+    font-family: 'FinalSixLight', sans-serif;
+    line-height: 31px;
+    color: white;
+    margin-bottom: 0;
+    width: 90%;
+}
+
+.footer .links {
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-top: 26px;
+}
+
+.footer .link-item {
+    margin-bottom: 24px;
+}
+
+.footer .link {
+    font-family: 'FinalSixMedium', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: none;
+    color: white;
+}
+.footer .link:hover {
+    font-weight: bold;
+}
+
+.footer .fr-content {
+    padding-top: 26px;
+}
+
+.footer .contact-info {
+    padding-left: 0;
+}
+
+.footer .contact-heading {
+    color: white;
+    font-family: 'FinalSixMedium', sans-serif;
+    margin-bottom: 23px;
+    font-size: 22px;
+}
+
+.footer .contact-item {
+    margin-bottom: 14px;
+}
+
+.footer .contact-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'FinalSixLight', sans-serif;
+    line-height: 30px;
+}
+
+.footer .contact-link::before {
+    font: var(--fa-font-solid);
+    color: white;
+    font-size: 20px;
+    margin-right: 9.5px;
+}
+
+.footer .phone::before {
+    content: "\f095";
+}
+
+.footer .mail::before {
+    content: "\f0e0";
+}
+
+.footer .location::before {
+    content: "\f3c5";
+}
+
+.footer .social-links {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer .social-item {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 9px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-link {
+    font-size: 16px;
+}
+
+.footer .social-item:hover .social-link {
+    font-size: 17px;
+}
+
+.footer .fb {
+    color: #3b5998;
+}
+
+.footer .in {
+    color: #0072b1;
+}
+
+.footer .tw {
+    color: #00acee;
+}
+
+.footer .yt {
+    color: #c4302b;
+}
+
 /* Media Queries with Max-Width */
 @media screen and (max-width: 1853px) {
     /* Facilities */
@@ -712,6 +909,11 @@
 }
 
 @media screen and (max-width: 1500px) {
+    /* Chiniot */
+    .chiniot {
+        padding-bottom: 200px;
+    }
+
     .chiniot .green-card .bottom-part {
         padding: 116px 44px 100px;
     }
@@ -722,35 +924,70 @@
 }
 
 @media screen and (max-width: 1400px) {
+    /* Header */
+    .header .header-content {
+        padding: 12px 0;
+    }
+
+    .header .logo-img {
+        width: 170px;
+    }
+
+    .header .navbar .nav-link {
+        font-size: 16px;
+    }
+
+    .header .login-btn {
+        padding: 8px 18px;
+    }
+
+    .header .login-btn .icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .header .login-btn:hover .txt {
+        transform: translateX(-50px);
+    }
+
+    .header .login-btn .txt {
+        font-size: 17px;
+    }
+
     /* Banner */
     .banner {
-        padding-bottom: 300px;
+        padding-top: 200px;
+        padding-bottom: 250px;
     }
     .banner .banner-img-div {
         margin-bottom: 26px;
     }
 
+    .banner .fda-div {
+        width: 180px;
+    }
+
     .banner .banner-img {
-        width: 300px;
+        width: 250px;
     }
 
     .banner .heading-1 {
-        font-size: 70px;
-        line-height: 100px;
+        font-size: 60px;
+        line-height: 80px;
     }
 
     .banner .heading-2 {
-        font-size: 100px;
-        line-height: 100px;
+        font-size: 80px;
+        line-height: 80px;
     }
 
     .banner .banner-last-txt {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .banner .coming-div {
-        width: 280px;
-        height: 242px;
+        width: 256px;
+        height: 220px;
     }
 
     .banner .comming-player {
@@ -766,10 +1003,6 @@
     .nature .plots-div {
         padding: 18px 60px;
         width: 60%;
-    }
-
-    .nature .plots-info {
-        gap: 10px;
     }
 
     .nature .sm-heading {
@@ -848,7 +1081,7 @@
 
     /* Chiniot */
     .chiniot {
-        padding-bottom: 80px;
+        padding-bottom: 175px;
     }
 
     .chiniot .content {
@@ -865,6 +1098,24 @@
 
     .chiniot .green-card .bottom-part {
         padding: 60px 50px 60px;
+    }
+
+    /* Footer */
+    .footer .content {
+        padding-top: 710px;
+        padding-bottom: 20px;
+    }
+
+    .footer .form-section {
+        padding: 98px 100px 126px;
+    }
+
+    .footer .f-logo {
+        margin-bottom: 40px;
+    }
+
+    .footer .f-logo-img {
+        width: 220px;
     }
 }
 
@@ -918,10 +1169,6 @@
         margin-bottom: 16px;
     }
 
-    .nature .plots-info {
-        gap: 0px;
-    }
-
     .nature .lg-heading {
         font-size: 36px;
         line-height: 36px;
@@ -938,6 +1185,37 @@
     /* Facilities */
     .facilities {
         padding-bottom: 24px;
+    }
+
+    .footer .form-section {
+        padding: 80px 60px 100px;
+    }
+
+    .footer .heading {
+        margin-bottom: 60px;
+    }
+
+    /* Footer */
+    .footer .content {
+        padding-top: 650px;
+    }
+    
+    .footer .logo {
+        margin-bottom: 30px;
+    }
+
+    .footer .para {
+        width: 100%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .footer .link-item {
+        margin-bottom: 20px;
+    }
+
+    .footer .contact-item {
+        margin-bottom: 10px;
     }
 }
 
@@ -1045,9 +1323,8 @@
 
     /* Chiniot */
     .chiniot {
-        padding-bottom: 50px;
+        padding-bottom: 130px;
     }
-
     .chiniot .animation-txt {
         font-size: 18px;
     }
@@ -1058,6 +1335,36 @@
 
     .chiniot .video{
         height: 300px;
+    }
+
+    /* Footer */
+    .footer .content {
+        padding-top: 730px;
+    }
+
+    .footer .form-section {
+        padding: 80px 60px;
+    }
+
+    .footer .heading {
+        font-size: 48px;
+        margin-bottom: 44px;
+    }
+
+    .footer .f-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer .link-item {
+        margin-bottom: 8px;
+    }
+
+    .footer .contact-item {
+        margin-bottom: 6px;
+    }
+
+    .footer .contact-link::before {
+        font-size: 17px;
     }
 }
 
@@ -1129,6 +1436,10 @@
     }
 
     /* Chiniot */
+    .chiniot {
+        padding-bottom: 120px;
+    }
+
     .chiniot .map-parent {
         margin-bottom: 22px;
     }
@@ -1139,6 +1450,24 @@
 
     .chiniot .video {
         height: 250px;
+    }
+
+    /* Footer */
+    .footer .form-section {
+        padding: 60px 40px;
+    }
+    
+    .footer .contact-link {
+        font-size: 15px;
+    }
+
+    .footer .social-item {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer .social-link {
+        font-size: 14px;
     }
 }
 
@@ -1176,6 +1505,33 @@
 
     .nature .size-type {
         font-size: 14px;
+    }
+
+    /* Footer */
+    .footer .content {
+        padding-top: 540px;
+    }
+
+    .footer .form-section {
+        padding: 50px 30px;
+    }
+
+    .footer .button {
+        padding: 10px 30px;
+    }
+
+    .footer .heading {
+        font-size: 40px;
+        margin-bottom: 22px;
+    }
+
+    .footer .input-element {
+        padding: 18px;
+        margin-bottom: 12px;
+    }
+
+    .footer .links {
+        padding-top: 20px;
     }
 }
 
@@ -1277,10 +1633,6 @@
     }
 
     /* Chiniot */
-    .chiniot {
-        padding-bottom: 20px;
-    }
-    
     .chiniot .green-card .top-part {
         padding: 40px 0;
     }
@@ -1310,6 +1662,44 @@
 
     .chiniot .video {
         height: 200px;
+    }
+
+    /* Footer */
+    .footer .content {
+        padding-top: 500px;
+    }
+
+    .footer .form-section {
+        padding: 40px 20px;
+    }
+
+    .footer .heading {
+        font-size: 34px;
+    }
+
+    .footer .input-element {
+        font-size: 14px;
+    }
+
+    .footer .f-logo-img {
+        width: 180px;    
+    }
+
+    .footer .para {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .footer .link-item {
+        margin-bottom: 2px;
+    }
+
+    .footer .fr-content {
+        padding-top: 14px;
+    }
+
+    .footer .contact-heading {
+        margin-bottom: 10px;
     }
 }
 
@@ -1456,6 +1846,20 @@
 
     .join-us .para {
         font-size: 18px;
+    }
+
+    /* Footer */
+    .footer .form-section {
+        padding: 34px 12px;
+    }
+
+    .footer .heading {
+        font-size: 27px;
+        margin-bottom: 16px;
+    }
+
+    .footer .button {
+        padding: 9px 28px;
     }
 }
 
