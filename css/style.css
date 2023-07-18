@@ -556,7 +556,7 @@
     font-size: 79px;
     font-family: 'FinalSixBlack', sans-serif;
     color: white;
-    line-height: 44px;
+    /* line-height: 44px; */
     margin-bottom: 0;
 }
 
@@ -582,7 +582,8 @@
 .chiniot .green-card {
     right: 0;
     left: unset;
-    top: -184px;
+    bottom: 251px;
+    top: unset;
 }
 
 .chiniot .green-card .top-part {
@@ -663,6 +664,7 @@
 
 .footer .input-element {
     width: 100%;
+    font-size: 18px;
     padding: 22px;
     background-color: #005C4D;
     color: white;
@@ -847,14 +849,38 @@
 
     /* Chiniot Green Card */
     .chiniot .green-card .bottom-part {
-        padding: 116px 60px 100px;
+        padding: 116px 58px 100px;
     }
 }
 
 @media screen and (max-width: 1750px) {
     /* Banner */
+    .banner {
+        padding: 230px 0 250px;
+    }
+
     .banner .fda-div {
         right: 0;
+    }
+
+    .banner .banner-img {
+        width: 300px;
+    }
+
+    .banner .heading-1 {
+        font-size: 72px;
+    }
+
+    .banner .heading-2 {
+        font-size: 114px;
+    }
+
+    .banner .banner-img-div {
+        margin-bottom: 10px;
+    }
+
+    .banner .banner-last-txt {
+        font-size: 28px;
     }
 
     /* Nature */
@@ -869,57 +895,169 @@
     }
 
     /* Facilities */
-    .green-card {
-        width: 28%;
-    }
-
     .green-card .top-part {
         padding: 244px 50px 69px;
-    }
-
-    .green-card .heading-1 {
-        font-size: 46px;
-        line-height: 50px;
-    }
-
-    .green-card .heading-2 {
-        font-size: 92px;
-        line-height: 92px;
     }
 
     .green-card .bottom-part {
         padding: 88px 50px 93px;
     }
 
-    .green-card .para {
-        font-size: 18px;
-        line-height: 26px;
+    /* Chiniot Green Card */
+    .chiniot {
+        padding-bottom: 200px;
     }
 
-    /* Chiniot Green Card */
+    .chiniot .green-card {
+        bottom: 200px;
+    }
+
     .chiniot .green-card .top-part {
-        padding: 170px 0px 110px;
+        padding: 94px 0;
+    }
+}
+
+@media screen and (max-width: 1621px) {
+    /* Facilities */
+    .green-card .bottom-part {
+        padding: 88px 40px 93px;
     }
 }
 
 @media screen and (max-width: 1576px) {
+    /* Header */
+    .header .logo-img {
+        width: 170px;
+    }
+
+    .header .nav-item .nav-link {
+        padding: 0px 12px;
+        font-size: 16px;
+    }
+
+    .header .login-btn {
+        padding: 10px 21px;
+    }
+
+    .header .login-btn .icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Banner */
+    .banner {
+        padding: 220px 0;
+    }
+
+    .banner .banner-img {
+        width: 250px;
+    }
+
+    .banner .heading-1 {
+        font-size: 68px;
+        line-height: 90px;
+    }
+
+    .banner .heading-2 {
+        font-size: 100px;
+        line-height: 100px;
+        margin-bottom: 4px;
+    }
+
+    .banner .banner-last-txt {
+        font-size: 24px;
+    }
+
+    /* Facilities */
+    .facilities {
+        padding-bottom: 60px;
+    }
+
+    .facilities .sm-cards {
+        width: 70%;
+    }
+
+    .green-card {
+        width: 29%;
+    }
+
+    .green-card .para {
+        margin-bottom: 0;
+    }
+
+    .green-card .heading-1 {
+        font-size: 52px;
+    }
+
+    .green-card .heading-2 {
+        font-size: 104px;
+        line-height: 104px;
+    }
+
+    /* Join Us */
+    .join-us .logo-div {
+        width: 290px;
+    }
+
+    .join-us .heading {
+        font-size: 70px;
+    }
+
+    /* Chiniot */
     .chiniot .green-card .bottom-part {
         padding: 116px 58px 100px;
     }
 }
 
-@media screen and (max-width: 1500px) {
-    /* Chiniot */
-    .chiniot {
-        padding-bottom: 200px;
+@media screen and (max-width: 1499.9px) {
+    /* Facilities */
+    .green-card .heading-1 {
+        font-size: 48px;
+        line-height: 52px;
     }
 
+    .green-card .para {    
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    /* Chiniot */
+    .chiniot {
+        padding-bottom: 160px;
+    }
+
+    .chiniot .green-card {
+        bottom: 160px;
+    }
+
+    .chiniot .green-card .top-part {
+        padding: 80px 0;
+    }
+    
     .chiniot .green-card .bottom-part {
-        padding: 116px 44px 100px;
+        padding: 100px 44px;
     }
 
     .chiniot .green-card .para {
         margin-bottom: 0;
+    }
+
+    .chiniot .animation-txt {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .chiniot .map {
+        height: 300px;
+    }
+
+    .chiniot .video {
+        height: 300px;
+    }
+
+    /* Footer */
+    .footer .input-element {
+        font-size: 17px;
     }
 }
 
@@ -942,8 +1080,8 @@
     }
 
     .header .login-btn .icon {
-        width: 34px;
-        height: 34px;
+        width: 30px;
+        height: 30px;
     }
 
     .header .login-btn:hover .txt {
@@ -956,19 +1094,16 @@
 
     /* Banner */
     .banner {
-        padding-top: 200px;
-        padding-bottom: 250px;
-    }
-    .banner .banner-img-div {
-        margin-bottom: 26px;
+        padding: 186px 0;
     }
 
     .banner .fda-div {
         width: 180px;
+        top: -80px;
     }
 
     .banner .banner-img {
-        width: 250px;
+        width: 218px;
     }
 
     .banner .heading-1 {
@@ -982,7 +1117,7 @@
     }
 
     .banner .banner-last-txt {
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .banner .coming-div {
@@ -1036,43 +1171,61 @@
 
     /* Facilities */
     .green-card {
-        position: static;
-        width: 100%;
-        margin-bottom: 30px;
+        width: 32%;
     }
 
     .green-card .top-part {
         text-align: center;
-        padding: 60px 0;
+        padding: 140px 0 69px;
+    }
+
+    .green-card .heading-1 {
+        font-size: 44px;
+        line-height: 46px;
+    }
+
+    .green-card .heading-2 {
+        font-size: 88px;
+        line-height: 88px;
     }
 
     .green-card .bottom-part {
-        padding: 60px 50px 60px;
+        padding: 100px 28px;
+    }
+
+    .green-card .para {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .facilities {
-        padding-bottom: 60px;
+        padding-bottom: 24px;
     }
 
     .facilities .content {
-        padding-top: 0;
-        flex-direction: column;
+        padding-top: 56px;
     }
 
     .facilities .sm-cards {
-        width: 100%;
+        width: 66%;
+    }
+
+    .facilities .card-link{
+        font-size: 20px;
     }
 
     /* Join Us Section */
     .join-us .content {
         height: 700px;
     }
+
     .join-us .logo-div {
-        width: 275px;
+        width: 250px;
     }
 
     .join-us .heading {
-        font-size: 70px;
+        font-size: 64px;
+        line-height: 66px;
     }
 
     .join-us .para {
@@ -1084,16 +1237,26 @@
         padding-bottom: 175px;
     }
 
-    .chiniot .content {
-        padding-top: 0;
+    .chiniot .green-card {
+        bottom: 175px;
     }
 
     .chiniot .main-content {
-        width: 100%;
+        width: 66%;
     }
 
-    .chiniot .green-card .top-part {
-        padding: 50px 0;
+    .chiniot .a-cards {
+        margin-bottom: 46px;
+    }
+
+    .chiniot .animation-parent {
+        width: 100px;
+        height: 100px;
+    }
+
+    .chiniot .animation-txt {
+        font-size: 18px;
+        line-height: 26px;
     }
 
     .chiniot .green-card .bottom-part {
@@ -1102,12 +1265,22 @@
 
     /* Footer */
     .footer .content {
-        padding-top: 710px;
+        padding-top: 610px;
         padding-bottom: 20px;
     }
 
     .footer .form-section {
-        padding: 98px 100px 126px;
+        padding: 100px;
+    }
+
+    .footer .heading {
+        font-size: 64px;
+        margin-bottom: 34px;
+    }
+
+    .footer .input-element {
+        font-size: 15px;
+        padding: 16px;
     }
 
     .footer .f-logo {
@@ -1121,38 +1294,68 @@
 
 @media screen and (max-width: 1200px) {
     /* Header */
+    .header .header-content {
+        padding-top: 10px;
+    }
+
     .header .logo-img {
         width: 160px;
     }
 
+    .header .nav-item .nav-link {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
     .header .login-btn {
-        padding: 10px 21px;
+        padding: 8px 16px;
+        gap: 12px;
+    }
+
+    .header .login-btn:hover .icon {
+        transform: translateX(56px);
+    }
+
+    .header .login-btn:hover .txt {
+        transform: translateX(-38px);
+    }
+
+    .header .login-btn.txt {
+        font-size: 14px;
+    }
+
+    .header .login-btn .icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .header .login-btn .fa-user:before {
+        font-size: 14px;
     }
 
     /* Banner */
     .banner {
-        padding-bottom: 220px;
-    }
-    .banner .banner-img {
-        width: 250px;
+        padding-bottom: 210px;
+        padding-top: 170px;
     }
 
     .banner .heading-1 {
-        font-size: 60px;
+        font-size: 58px;
     }
 
-    .banner .heading-1 {
-        font-size: 90px;
+    .banner .heading-2 {
+        font-size: 74px;
+        margin-bottom: 8px;
     }
 
     .banner .coming-div {
-        width: 240px;
-        height: 216px;
+        width: 220px;
+        height: 180px;
     }
 
     .banner .comming-player {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     /* Nature */
@@ -1184,20 +1387,102 @@
 
     /* Facilities */
     .facilities {
-        padding-bottom: 24px;
+        padding-bottom: 0;
     }
 
-    .footer .form-section {
-        padding: 80px 60px 100px;
+    .facilities .content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
     }
 
-    .footer .heading {
-        margin-bottom: 60px;
+    .green-card {
+        position: static;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .green-card .top-part {
+        padding: 24px 0;
+    }
+
+    .green-card .heading-1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .green-card .heading-2 {
+        font-size: 76px;
+        line-height: 76px;
+    }
+
+    .green-card .bottom-part {
+        padding: 52px;
+    }
+
+    .green-card .para {
+        font-size: 16px;
+    }
+
+    .facilities .sm-cards {
+        width: 100%;
+    }
+
+    /* Join Us */
+    .join-us .content {
+        height: 630px;
+    }
+
+    .join-us .logo-div {
+        width: 230px;
+    }
+
+    .join-us .heading {
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    .join-us .para {
+        font-size: 21px;
+        line-height: 21px;
+    }
+
+    /* Chiniot */
+    .chiniot {
+        padding-bottom: 140px;
+    }
+
+    .chiniot .content {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chiniot .main-content {
+        width: 90%;
+    }
+
+    .chiniot .green-card .top-part {
+        padding: 36px 0;
     }
 
     /* Footer */
+    .footer .form-section {
+        padding: 70;
+    }
+
+    .footer .heading {
+        font-size: 60px;
+        margin-bottom: 36px;
+    }
+
+    .footer .button {
+        padding: 10px 30px;
+    }
+
     .footer .content {
-        padding-top: 650px;
+        padding-top: 580px;
     }
     
     .footer .logo {
@@ -1243,7 +1528,7 @@
 
     /* NavBar Setting */
     .header {
-        position: relative;
+        position: fixed;
     }
 
     .header .navbar {
@@ -1268,7 +1553,13 @@
     
     .header .nav-item {
         background-color: white;
-        padding-left: 20px;
+        padding: 10px 0;
+        border-bottom: 1px solid #92191C;
+        /* padding-left: 20px; */
+    }
+
+    .header .nav-item:last-child {
+        border-bottom: 0;
     }
 
     .header .navbar .nav-link:hover {
@@ -1282,11 +1573,15 @@
     /* Banner */
     .banner {
         padding-top: 150px;
-        padding-bottom: 216px;
     }
 
     .banner .fda-div {
-        width: 190px;
+        width: 160px;
+        top: -46px;
+    }
+
+    .banner .banner-img {
+        width: 184px;
     }
 
     .banner .coming-div {
@@ -1308,17 +1603,51 @@
         width: 60%;
     }
 
+    .nature .heading-1 {
+        font-size: 52px;
+        line-height: 56px;
+    }
+
+    .nature .heading-2 {
+        font-size: 68px;
+        line-height: 72px;
+    }
+
     .nature .para {
         width: 100%;
     }
 
     /* Facilities */
+    .green-card .para {
+        font-size: 14px;
+    }
+
+    .green-card .bottom-part {
+        padding: 40px;
+    }
+
     .facilities .sm-card {
         padding-bottom: 22px;
     }
 
     .facilities .card-link {
-        font-size: 20px;
+        font-size: 18px;
+        padding-top: 4px;
+    }
+
+    /* Join Us */
+    .join-us .content {
+        height: 560px;
+    }
+
+    .join-us .heading {
+        font-size: 47px;
+        line-height: 48px;
+    }
+
+    .join-us .para {
+        font-size: 19px;
+        line-height: 21px;
     }
 
     /* Chiniot */
@@ -1339,11 +1668,11 @@
 
     /* Footer */
     .footer .content {
-        padding-top: 730px;
+        padding-top: 610px;
     }
 
     .footer .form-section {
-        padding: 80px 60px;
+        padding: 50px;
     }
 
     .footer .heading {
@@ -1372,30 +1701,30 @@
     /* Banner */
     .banner {
         padding-top: 130px;
-        padding-bottom: 170px;
     }
     .banner .fda-div {
         width: 140px;
-        top: -80px;
+        top: -48px;
     }
 
     .banner .banner-img {
-        width: 200px;
+        width: 188px;
     }
 
     .banner .heading-1 {
         font-size: 50px;
         line-height: 54px;
+        margin-bottom: 10px;
     }
 
     .banner .heading-2 {
         font-size: 74px;
         line-height: 76px;
-        margin-bottom: 0;
+        margin-bottom: 10;
     }
 
     .banner .banner-last-txt {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .banner .coming-div {
@@ -1423,21 +1752,57 @@
     }
 
     .nature .heading-1 {
-        font-size: 54px;
+        font-size: 50px;
     }
 
-    /* Join Us */
-    .join-us .heading {
+    .nature .heading-2 {
         font-size: 66px;
     }
 
+    .nature .para {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* Facilities */
+    .green-card {
+        width: 100%;
+    }
+
+    .facilities .card-link {
+        font-size: 17px;
+    }
+
+    /* Join Us */
+    .join-us .logo-div {
+        width: 210px;
+    }
+
+    .join-us .heading {
+        font-size: 44px;
+        line-height: 45px;
+    }
+
     .join-us .para {
-        font-size: 19px;
+        font-size: 17px;
+        line-height: 18px;
     }
 
     /* Chiniot */
     .chiniot {
         padding-bottom: 120px;
+    }
+
+    .chiniot .green-card .top-part {
+        padding: 26px 0;
+    }
+
+    .chiniot .green-card .bottom-part {
+        padding: 50px 40px;
+    }
+
+    .chiniot .animation-txt {
+        font-size: 17px;
     }
 
     .chiniot .map-parent {
@@ -1453,8 +1818,25 @@
     }
 
     /* Footer */
+    .footer .content {
+        padding-top: 564px;
+    }
+
     .footer .form-section {
         padding: 60px 40px;
+    }
+
+    .footer .heading {
+        margin-bottom: 16px;
+    }
+
+    .footer .input-element {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .footer .button {
+        font-size: 16px;
     }
     
     .footer .contact-link {
@@ -1477,12 +1859,10 @@
         padding: 90px 0;
     }
     .nature .heading-1 {
-        font-size: 50px;
         line-height: 60px;
     }
 
     .nature .heading-2 {
-        font-size: 70px;
         line-height: 73px;
     }
 
@@ -1509,7 +1889,7 @@
 
     /* Footer */
     .footer .content {
-        padding-top: 540px;
+        padding-top: 530px;
     }
 
     .footer .form-section {
@@ -1526,20 +1906,40 @@
     }
 
     .footer .input-element {
-        padding: 18px;
         margin-bottom: 12px;
+    }
+
+    .footer .f-logo-img {
+        width: 190px;
+    }
+
+    .footer .para {
+        font-size: 15px;
     }
 
     .footer .links {
         padding-top: 20px;
+    }
+
+    .footer .link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer .contact-link::before {
+        font-size: 15px;
+    }
+
+    .footer .contact-link {
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 480px) {
     /* Banner */
     .banner {
-        padding-top: 94px;
-        padding-bottom: 146px;
+        padding-top: 150px;
+        padding-bottom: 200px;
     }
 
     .banner .fda-div {
@@ -1624,19 +2024,12 @@
     }
 
     /* Join Us */
-    .join-us .content {
-        height: 640px;
-    }
-
-    .join-us .logo-div {
-        width: 240px;
+    .join-us .heading {
+        font-size: 40px;
+        line-height: 40px;
     }
 
     /* Chiniot */
-    .chiniot .green-card .top-part {
-        padding: 40px 0;
-    }
-
     .green-card .heading-1 {
         font-size: 34px;
         line-height: 34px;
@@ -1675,10 +2068,6 @@
 
     .footer .heading {
         font-size: 34px;
-    }
-
-    .footer .input-element {
-        font-size: 14px;
     }
 
     .footer .f-logo-img {
@@ -1727,6 +2116,15 @@
         padding-bottom: 120px;
     }
 
+    .banner .fda-div {
+        top: -50px;
+        width: 100px;
+    }
+
+    .banner .banner-img {
+        width: 140px;
+    }
+
     .banner .heading-1 {
         font-size: 36px;
         line-height: 38px;
@@ -1753,6 +2151,7 @@
     /* Nature */
     .nature .content {
         font-size: 60px;
+        padding-bottom: 70px;
     }
 
     .nature .plots-div {
@@ -1800,27 +2199,25 @@
     }
 
     .green-card .top-part {
-        padding: 40px 0;
+        padding: 30px 0;
     }
 
     .green-card .heading-1 {
-        font-size: 36px;
-        line-height: 38px;
         margin-bottom: 0;
     }
 
     .green-card .heading-2 {
-        font-size: 74px;
-        line-height: 74px;
+        font-size: 70px;
+        line-height: 70px;
     }
 
     .green-card .bottom-part {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
 
     .green-card .para {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .facilities .sm-card {
@@ -1828,27 +2225,46 @@
     }
 
     .facilities .card-link {
-        font-size: 18px;
+        font-size: 15px;
         padding-top: 4px;
     }
 
     /* Join Us */
     .join-us .content {
-        height: 600px;
+        height: 450px;
     }
     .join-us .logo-div {
-        width: 230px;
+        width: 200px;
+        top: 40px;
     }
 
     .join-us .heading {
-        font-size: 50px;
+        font-size: 36px;
     }
 
     .join-us .para {
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    /* Chiniot */
+    .chiniot .animation-txt {
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .chiniot .map {
+        height: 150px;
+    }
+
+    .chiniot .video {
+        height: 150px;
     }
 
     /* Footer */
+    .footer .content {
+        padding-top: 460px;
+    }
+
     .footer .form-section {
         padding: 34px 12px;
     }
@@ -1860,6 +2276,7 @@
 
     .footer .button {
         padding: 9px 28px;
+        font-size: 14px;
     }
 }
 
@@ -1871,9 +2288,14 @@
     }
 }
 
-@media screen and (min-width: 992px) {
-    /* Header */
-    .header .nav-item .nav-link {
-        padding: 0 20px;
+@media (min-width: 1401px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
     }
+}
+
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1140px;
+}
 }
